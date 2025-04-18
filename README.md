@@ -10,7 +10,11 @@
   <a href="https://github.com/anujlunawat/GitItDone-Extension/blob/main/LICENSE.txt">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"/>
   </a>
+  <img alt="Chrome" src="https://img.shields.io/badge/Chrome-Extension-blue">
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/anujlunawat/GitItDone-Extension?style=social">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/anujlunawat/GitItDone-Extension">
 </p>
+
 
 ## What is GitItDone?
 <p>A Chrome extension that automatically pushes your LeetCode solutions to GitHub when you solve a problem. It helps you maintain a portfolio of your coding interview preparation and track your progress.
@@ -62,7 +66,7 @@ No more manual copying of solutions! GitItDone automatically organizes your solu
     * Go to <a href="chrome://extensions">chrome://extensions</a>
     * Enable Developer mode by toggling the switch on top right corner
     * Click **"Load unpacked"**
-    * Select the entire LeetHub folder
+    * Select the entire GitItDone folder
 
 ## Setup
 
