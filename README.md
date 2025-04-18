@@ -60,7 +60,7 @@ No more manual copying of solutions! GitItDone automatically organizes your solu
         * Application name: [CUSTOM]
         * Homepage URL: https://github.com/anujlunawat/gititdone
         * Authorization callback URL: https://github.com/
-    * Download the project <a href="/anujlunawat/GitItDone/archive/refs/heads/main.zip">ZIP</a> or clone this repository
+    * Download the project <a href="https://github.com/anujlunawat/GitItDone/archive/refs/heads/main.zip">ZIP</a> or clone this repository
     * Run ```npm run setup``` to install the developer dependencies
     * Update CLIENT_ID and CLIENT_SECRET in ```src/js/authorize.js``` and ```src/js/oauth2.js``` with your ids
     * Go to <a href="chrome://extensions">chrome://extensions</a>
