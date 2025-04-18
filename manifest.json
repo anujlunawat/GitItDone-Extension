@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "GitItDone",
+  "description": "Automatically commit your LeetCode solutions to GitHub",
+  "homepage_url": "https://github.com/anujlunawat/GitItDone",
+  "version": "1.0.0",
+  "author": "Anuj Lunawat",
+  "action": {
+    "default_icon": "assets/thumbnail.png",
+    "default_popup": "popup.html",
+    "default_title": "Upload your LeetCode solutions to GitHub"
+  },
+  "icons": {
+    "16": "assets/thumbnail.png",
+    "48": "assets/thumbnail.png",
+    "128": "assets/thumbnail.png"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "permissions": [
+    "unlimitedStorage",
+    "storage",
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": [],
+  "web_accessible_resources": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/*"
+      ],
+      "js": [
+        "scripts/leetcode.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "scripts/authorize.js"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

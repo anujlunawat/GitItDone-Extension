@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="dark-theme">
+  <head>
+    <link rel="stylesheet" href="css/welcome.css" />
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" />
+    <script src="scripts/semantic-2.4.1.min.js"></script>
+    <meta name="color-scheme" content="dark">
+  </head>
+
+  <body class="dark-theme">
+    <div class="container">
+      <div class="hero-section">
+        <h1 class="app-title">
+          <span class="git">Git</span><span class="it">It</span><span class="done">Done</span>
+        </h1>
+        <p class="subtitle">Automatically commit your LeetCode solutions to GitHub</p>
+      </div>
+
+      <div class="content-section">
+        <!-- Create Hook -->
+        <div id="hook_mode" class="hook-container">
+          <h2>Get Started with GitItDone</h2>
+          <div class="form-container">
+            <div class="form-group">
+              <select id="type" class="modern-select">
+                <option value="">Select an Option</option>
+                <option value="new">Create a new Private Repository</option>
+                <option value="link">Link an Existing Repository</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input autocomplete="off" id="name" placeholder="Repository Name" type="text" class="modern-input" />
+              <select id="repo-select" class="modern-select" style="display: none;">
+                <option value="">Select a Repository</option>
+              </select>
+            </div>
+            <button id="hook_button" disabled class="primary-button">Get Started</button>
+          </div>
+        </div>
+
+        <!-- Show stats -->
+        <div id="commit_mode" class="stats-container">
+          <div class="stats-card">
+            <h3>Problems Solved</h3>
+            <div class="total-solved">
+              <span id="p_solved">0</span>
+            </div>
+            <div class="difficulty-stats">
+              <div class="stat-item">
+                <span class="difficulty easy">Easy</span>
+                <span id="p_solved_easy">0</span>
+              </div>
+              <div class="stat-item">
+                <span class="difficulty medium">Medium</span>
+                <span id="p_solved_medium">0</span>
+              </div>
+              <div class="stat-item">
+                <span class="difficulty hard">Hard</span>
+                <span id="p_solved_hard">0</span>
+              </div>
+            </div>
+          </div>
+          <div class="feature-request">
+            <!-- <p>Want more features?</p> -->
+            <!-- <a href="https://github.com/anujlunawat/gititdone" target="_blank" class="feature-link">Request a feature!</a> -->
+          </div>
+        </div>
+
+        <div class="error-messages">
+          <p id="error" class="hidden"></p>
+          <p id="success" class="hidden"></p>
+          <p id="unlink" class="hidden">Linked the wrong repo? <a class="unlink-button">Unlink</a></p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href="https://github.com/anujlunawat/GitItDone" target="_blank" class="github-link">
+          Star <span class="git">Git</span><span class="it">It</span><span class="done">Done</span> on GitHub
+        </a>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scripts/welcome.js"></script>
+  </body>
+</html>
